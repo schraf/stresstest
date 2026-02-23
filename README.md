@@ -138,10 +138,10 @@ This project follows a logical dependency chain:
 -  [**Environment**](./environment.md): Configuration, Logging, and Imports.
 -  [**Common**](./common.md): Common utilities and helpers.
 -  [**Interface**](./interface.md): Input and Output 
--  **Modules**: The core Logic and Data Models. 
+-  **Modules**:
     - [**Controller**](./module_controller.md): Coordinates workers and builds final report.
     - [**Worker**](./module_worker.md): Executes the endpoints queries and reports telemetry to controller.
-    - [**Transfport**](./module_transport.md): Defines the communication between controller and worker.
+    - [**Transport**](./module_transport.md): Defines the communication between controller and worker.
 -  [**Orchestration**](./orchestration.md): The `main` execution entry point.
 -  [**Testing**](./testing.md): Test code helpers.
 
