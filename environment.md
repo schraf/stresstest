@@ -32,7 +32,7 @@ require (
 
 Define constants, file paths, and hyperparameters here.
 
-```{name="configuration"}
+```go {name="configuration"}
 ```
 
 ## Logging Strategy
@@ -40,7 +40,7 @@ Define constants, file paths, and hyperparameters here.
 We define our logging (log levels, formats) immediately so it is consistent for
 every subsequent function.
 
-```{name="logging"}
+```go {name="logging"}
 func InitializeLogging() {
 	// Determine log level based on DEBUG environment variable
 	level := slog.LevelInfo

@@ -10,7 +10,7 @@ data gathered during the test.
 First, we need to define what a "test" actually looks like. This should be
 serializable (JSON) so the controller can read it and pass it to workers.
 
-```{name="interface_inputs"}
+```go {name="interface_inputs"}
 type Method string
 
 const (
@@ -46,7 +46,7 @@ To aggregate data efficiently, workers should return small, summarized packets
 of data rather than raw logs. These `Metric` payloads will be aggregated into a
 final report.
 
-```{name="interface_outputs"}
+```go {name="interface_outputs"}
 type Metrics struct {
     Timestamp     time.Time     `json:"timestamp"`
     Latency       time.Duration `json:"latency"`

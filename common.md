@@ -8,7 +8,7 @@ flow of the "good stuff" later.
 
 Boring but necessary code for converting between data formats.
 
-``` {name="common_conversions"}
+```go {name="common_conversions"}
 ```
 
 ## Generic Utilities
@@ -36,7 +36,7 @@ func (e *ErrInvalidConfig) Error() string {
 
 Simple calculations or wrappers used in multiple places.
 
-```{name="common_utilities"}
+```go {name="common_utilities"}
 
 {{include "common_error_invalid_config"}}
 ```
