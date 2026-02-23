@@ -38,5 +38,8 @@ test: build
 
 clean:
 	rm -f *.go
+
+distclean: clean
+	rm -f go.mod go.sum Makefile LICENSE
 ```
 
