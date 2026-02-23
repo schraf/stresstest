@@ -24,13 +24,15 @@ all: build test
 deps:
 	curl -fsSL https://raw.githubusercontent.com/schraf/literate/main/install.sh | bash
 
-build: $(MARKDOWN_SRC)
+generate: $(MARKDOWN_SRC)
 	$$(go env GOPATH)/bin/literate $(MARKDOWN_SRC)
 	go mod tidy
 	go fmt ./...
+
+build: generate
 	go build ./...
 
-test:
+test: build
 	go vet ./...
 	go test ./...
 
