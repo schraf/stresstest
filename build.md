@@ -37,7 +37,7 @@ test: build
 	go test ./...
 
 clean:
-	rm -f *.go
+	rm -f *.go stresstest
 
 distclean: clean
 	rm -f go.mod go.sum Makefile LICENSE

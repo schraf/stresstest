@@ -7,8 +7,8 @@ data without introducing significant overhead.
 
 ## Data Models
 
-This corresponds to the **"Nouns"** of your system. We define our data
-structures early so the reader understands the objects being manipulated.
+We define our data structures early so the reader understands the objects 
+being manipulated.
 
 ### Data Definitions
 
